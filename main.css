@@ -1,0 +1,46 @@
+#teditor{
+    margin: 0 auto;
+    width: 750px;
+    height: 300px;
+}
+#edit-component{
+    /* the ribbon */
+    border-bottom: none;
+    padding:10px;
+    background-color:#b8860b;
+    color: #000;
+    border-radius:8px 8px 0 0;
+    text-align: center;
+}
+#text-area{
+    border: 2px solid #b8860b;
+    height: 100%;
+    width: 746px;
+}
+input#input{
+    height: 294px;
+    width: 740px;
+}
+#edit-component > button{
+    color: #FFF;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+#edit-component > button:hover{
+    color:#000;
+    transition: all 0.3s linear 0s;
+}
+input[type="color"]{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: relative;
+    top: 5px;
+}
+i.material-symbols-outlined{
+    font-size: 20px;
+    top: 5px;
+    position: relative;
+}
