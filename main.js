@@ -1,3 +1,7 @@
+window.addEventListener("load",function(){
+    teditore.document.designMode="On";
+},false);
+
 var font = document.querySelectorAll("select#font-change> option");
 for(var i =0;i<font.length; i++) {
     font[i].style.fontFamily = font[i].value;
@@ -5,10 +9,6 @@ for(var i =0;i<font.length; i++) {
 var iframe = document.getElementById("input");
 var elmnt = iframe.contentWindow.document.getElementsByTagName("body")[0];
 var elmnts = iframe.contentWindow.document.getElementsByTagName("body")[0];
-
-window.addEventListener("load",function(){
-    teditore.document.designMode="On";
-},false);
 
 var selectedText = iframe.contentWindow.document.getSelection();
 var txtlength = selectedText.toString().length;
