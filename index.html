@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/dd7e4df5bd.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -19,18 +19,18 @@
             <button id="strike-button" onclick="strike()" title="Strikethrough"><s>abc</s></button>
             <input type="color" onclick="bgcolor()" value="" id="font-color" title="change font color">
             <select id="font-change" onclick="setfont()">
+                <option value="Courier">Courier</option>
                 <option value="Arial">Arial</option>
                 <option value="Calibri">Calibri</option>
                 <option value="Comic New">Comic New</option>
-                <option value="Courier">Courier</option>
                 <option value="sans-serif">Sans-Serif</option>
             </select>
             <button id="splus" onclick="increaseFontSize('input', 1)" title="Undo"><i class="material-symbols-outlined">text_increase</i></button>
             <button id="sminus" onclick="decreaseFontSize('input', -1)" title="Redo"><i class="material-symbols-outlined">text_decrease</i></button>
-            <button id="sminus" onclick="getIframeSelectionText(iframe)" title="Redo"><i class="material-symbols-outlined">text_decrease</i></button>
+            <!--<button id="sminus" onclick="getIframeSelectionText(iframe)" title="Redo"><i class="material-symbols-outlined">text_decrease</i></button> -->
            </div>
         <div id="text-area">
-                <iframe name="teditore" id="input" frameborder="0">
+                <iframe name="teditore" id="input" frameborder="0" >
                 </iframe>
         </div>
     </div>
